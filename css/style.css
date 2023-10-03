@@ -15,7 +15,6 @@ TYPOGRAPHY
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
-
     line-height: 28px;
 }
 
@@ -25,41 +24,20 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* 
-DEBUG FOOTER 
-*/
-
-
-
-.debug footer {
-    background-color: #23272a;
+h4 {
+    font-size: 24px;
+    color: #7289da;
 }
-
-.debug .main-menu-footer {
-    background-color: #f08080;
-    height: 550px;
-}
-
-.debug .menu-footer {
-    background-color: #20b2aa;
-    height: 550px;
-}
-
-
-.debug .footer-bar {
-    background-color: #7fffd4;
-    height: 50px;
-}
-
-.debug .logo-footer,
-.debug button {
-    background-color: #ffb8c3;
-}
-
 
 /* 
 COMMON 
 */
+
+.logo img {
+    width: 50%;
+    min-width: 100px;
+    vertical-align: middle;
+}
 
 .logo,
 .login {
@@ -73,13 +51,6 @@ COMMON
     line-height: normal;
     color: black;
     text-decoration: none;
-}
-
-
-.jumbo,
-.top-footer,
-.bottom-footer {
-    padding: 40px 0px;
 }
 
 .menu,
@@ -99,8 +70,6 @@ COMMON
     background-color: #f6f6f6;
 }
 
-
-
 .logo-footer,
 button {
     padding: 4px;
@@ -119,6 +88,11 @@ button {
     font-weight: bold;
 }
 
+.menu-footer ul li:first-child {
+    color: #7289da;
+    font-weight: bold;
+}
+
 /* 
 HEADER 
 */
@@ -126,12 +100,6 @@ HEADER
 header {
     color: white;
     background-color: #255ee9;
-
-}
-
-.logo img {
-    width: 50%;
-    min-width: 100px;
 }
 
 .head-bar {
@@ -146,9 +114,8 @@ header {
 }
 
 .login {
-    justify-content: end;
+    text-align: end;
 }
-
 
 .link {
     flex-grow: 1;
@@ -157,7 +124,6 @@ header {
     justify-content: space-between;
     max-width: 50%;
     min-width: 300px;
-
 }
 
 .link a {
@@ -172,19 +138,17 @@ header {
 }
 
 .jumbo-frame {
-    padding: 50px 0;
+    padding: 30px 0 50px;
     max-width: 46%;
     margin: auto;
     text-align: center;
     min-width: 500px;
-
 }
 
 .jumbo-frame .button.browser {
     background-color: #23272a;
     color: white;
 }
-
 
 /* 
 MAIN 
@@ -236,7 +200,8 @@ main img {
     padding-bottom: 90px;
 }
 
-.section.d .button.download {
+.section.d .button.download,
+.footer-bar .button.signup {
     background-color: #7289da;
     color: white;
 }
@@ -245,13 +210,66 @@ main img {
 FOOTER 
 */
 
+footer {
+    background-color: #23272a;
+    color: white;
+    border-bottom: 1px solid #e3e4e4;
+}
+
 .top-footer {
     padding-top: 8px;
-    border-bottom: 3px solid #d7d7d8;
+}
+
+.top-footer-container {
+    border-bottom: 1px solid #7289da;
+    padding-bottom: 20px;
 }
 
 .main-menu-footer {
     width: 30%;
+}
+
+.main-menu-footer .selection::after {
+    content: '\2B9F';
+    margin-left: 5px;
+}
+
+.main-menu-footer h4 {
+    margin-bottom: 0;
+}
+
+.language {
+    margin-top: 8px;
+}
+
+.selection {
+    font-size: 12px;
+
+}
+
+.language img {
+    width: 18px;
+    vertical-align: middle;
+}
+
+.icons i {
+    padding: 12px 14px 0 0px;
+    font-size: 16px;
+}
+
+.side-footer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-footer {
+    padding-top: 10px;
+}
+
+.menu-footer ul li {
+    list-style: none;
+    font-size: 12px;
 }
 
 .bottom-footer {
@@ -262,4 +280,9 @@ FOOTER
 .footer-bar {
     justify-content: space-between;
     align-items: center;
+    padding: 14px 0 40px;
+}
+
+.footer-bar .button.signup {
+    font-size: 12px;
 }
