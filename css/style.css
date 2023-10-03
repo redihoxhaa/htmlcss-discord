@@ -1,0 +1,267 @@
+/* 
+RESET 
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+DEBUG HEADER 
+*/
+
+.debug header {
+    background-color: #add8e6;
+}
+
+.debug .head-bar {
+    height: 50px;
+}
+
+.debug .logo,
+.debug .link,
+.debug .login {
+    background-color: #daa520;
+}
+
+.debug .news {
+    background-color: #00008b;
+}
+
+.debug .news-frame {
+    background-color: #ee82ee;
+    height: 300px;
+}
+
+/* 
+DEBUG MAIN 
+*/
+
+.debug .section-a,
+.debug .section-c {
+    background-color: white;
+}
+
+.debug .section-b,
+.debug .section-d {
+    background-color: #d3d3d3;
+}
+
+.debug .a-left,
+.debug .a-right,
+.debug .b-left,
+.debug .b-right,
+.debug .c-left,
+.debug .c-right {
+    height: 450px;
+}
+
+.debug .a-left,
+.debug .b-right,
+.debug .c-left {
+    background-color: #1e90ff;
+}
+
+.debug .a-right,
+.debug .b-left,
+.debug .c-right {
+    background-color: #ffc0cb;
+
+}
+
+.debug .menu-d {
+    background-color: #228b22;
+    height: 900px;
+}
+
+/* 
+DEBUG FOOTER 
+*/
+
+.debug footer {
+    background-color: #23272a;
+}
+
+.debug .main-menu-footer {
+    background-color: #f08080;
+    height: 550px;
+}
+
+.debug .a-menu-footer,
+.debug .b-menu-footer,
+.debug .c-menu-footer,
+.debug .d-menu-footer {
+    background-color: #20b2aa;
+    height: 550px;
+}
+
+
+.debug .footer-bar {
+    background-color: #7fffd4;
+    height: 50px;
+}
+
+.debug .logo-footer,
+.debug button {
+    background-color: #ffb8c3;
+}
+
+
+
+/* 
+COMMON 
+*/
+
+.logo,
+.link,
+.login {
+    padding: 5px
+}
+
+.logo,
+.link,
+.login,
+.news-frame,
+.a-left,
+.a-right,
+.b-left,
+.b-right,
+.c-left,
+.c-right,
+.menu-d,
+.main-menu-footer,
+.logo-footer,
+button {
+    border: 1px dashed black;
+}
+
+.a-menu-footer,
+.b-menu-footer,
+.c-menu-footer,
+.d-menu-footer {
+    border: 1px dashed white;
+}
+
+.head-bar,
+.news,
+.menu-a,
+.menu-b,
+.menu-c,
+.section-d,
+.top-footer,
+.bottom-footer {
+    padding: 40px 0px;
+}
+
+.menu-a,
+.menu-b,
+.menu-c,
+.menu-d,
+.top-footer-container,
+.footer-bar,
+.head-bar {
+    display: flex;
+    margin: auto;
+    width: 62.5%;
+}
+
+.a-menu-footer,
+.b-menu-footer,
+.c-menu-footer,
+.d-menu-footer {
+    width: 17.5%;
+}
+
+.a-left,
+.b-right,
+.c-left {
+    width: 60%;
+}
+
+.a-right,
+.b-left,
+.c-right {
+    width: 40%;
+}
+
+.logo-footer,
+button {
+    padding: 4px;
+}
+
+/* 
+TYPOGRAPHY 
+*/
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* 
+HEADER 
+*/
+
+.head-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo,
+.login {
+    width: 20%;
+}
+
+.login {
+    text-align: right;
+}
+
+.link {
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.news {
+    padding: 40px 0;
+}
+
+.news-frame {
+    width: 50%;
+    margin: auto;
+}
+
+
+/* 
+MAIN 
+*/
+
+/* 
+FOOTER 
+*/
+
+.top-footer {
+    padding-top: 8px;
+    border-bottom: 3px solid #d7d7d8;
+}
+
+.main-menu-footer {
+    width: 30%;
+}
+
+.bottom-footer {
+    border-bottom: 1px solid #d7d7d8;
+    padding-bottom: 0px;
+}
+
+.footer-bar {
+    justify-content: space-between;
+    align-items: center;
+}
