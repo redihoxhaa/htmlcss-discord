@@ -158,9 +158,18 @@ main {
     margin-top: 40px;
 }
 
-.section {
-    padding: 40px 0;
+.section.c #curve {
+    transform: scaleY(-1);
 }
+
+#curve:nth-child(odd) {
+    background-color: white;
+}
+
+#curve path:nth-child(odd) {
+    fill: #f6f6f6;
+}
+
 
 .col.a {
     width: 60%;
@@ -176,6 +185,7 @@ main img {
 
 .menu {
     justify-content: space-between;
+    padding: 40px 0;
 }
 
 .section.d .menu {
@@ -196,7 +206,7 @@ main img {
 }
 
 .section.d .button-container {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 90px;
 }
 
@@ -204,6 +214,13 @@ main img {
 .footer-bar .button.signup {
     background-color: #7289da;
     color: white;
+}
+
+.section.d .menu span {
+    width: 50%;
+    background-image: linear-gradient(to bottom, rgba(246, 246, 246, 0) 1%,
+            rgba(246, 246, 246, 1)), url(../img/stars.svg);
+    background-size: auto;
 }
 
 /* 
