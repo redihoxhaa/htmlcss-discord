@@ -8,36 +8,14 @@ body {
     box-sizing: border-box;
 }
 
-/* /* 
+/*
 DEBUG HEADER 
 */
-
-.debug header {
-    background-color: #add8e6;
-}
-
-.debug .head-bar {
-    height: 50px;
-}
-
-.debug .logo,
-.debug .link,
-.debug .login {
-    background-color: #daa520;
-}
-
-.debug .news {
-    background-color: #00008b;
-}
-
-.debug .news-frame {
-    background-color: #ee82ee;
-    height: 300px;
-}
 
 /* 
 DEBUG MAIN 
 */
+
 
 
 .debug .section-a,
@@ -73,6 +51,7 @@ DEBUG FOOTER
 */
 
 
+
 .debug footer {
     background-color: #23272a;
 }
@@ -99,18 +78,29 @@ DEBUG FOOTER
 }
 
 
-
 /* 
 COMMON 
 */
 
-.logo,
-.link,
-.login {
-    padding: 5px
+.flex {
+    display: flex;
 }
 
-.head-bar,
+
+.logo,
+.login {
+    width: 20%;
+}
+
+.button {
+    border-radius: 50px;
+    padding: 8px 10px;
+    background-color: white;
+    line-height: normal;
+    color: black;
+}
+
+
 .news,
 .section.d,
 .top-footer,
@@ -124,11 +114,15 @@ COMMON
 .head-bar {
     display: flex;
     margin: auto;
-    width: 62.5%;
+    width: 75%;
 }
 
 .menu-footer {
     width: 17.5%;
+}
+
+.section:nth-child(even) {
+    background-color: #f6f6f6;
 }
 
 .col.a {
@@ -150,45 +144,87 @@ TYPOGRAPHY
 
 body {
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 /* 
 HEADER 
 */
 
+header {
+    color: white;
+    background-color: #255ee9;
+
+}
+
+.logo img {
+    width: 50%;
+}
+
 .head-bar {
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 20px 0;
+    font-size: 12px;
 }
 
-.logo,
-.login {
-    width: 20%;
+.login .button {
+    color: black;
 }
 
 .login {
-    text-align: right;
+    justify-content: end;
 }
+
 
 .link {
     flex-grow: 1;
     text-align: center;
+    justify-content: space-between;
+    max-width: 50%;
 
 }
 
 .link a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .news {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
     padding: 40px 0;
 }
 
 .news-frame {
-    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 35px;
+    width: 53%;
     margin: auto;
+    text-align: center;
+
+}
+
+.news-frame .button {
+    padding: 12px 15px;
+    margin: 10px;
+}
+
+.news-frame .button.download::before {
+    content: "\1F827";
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.news-frame .button.browser {
+    background-color: #23272a;
+    color: white;
 }
 
 
@@ -199,6 +235,7 @@ MAIN
 .section {
     padding: 40px 0;
 }
+
 
 /* 
 FOOTER 
